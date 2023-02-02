@@ -24,6 +24,7 @@ random foods for eat
 - [ ] Try SEO
 - [ ] working with api
 - [x] install tailwindcss
+- [x] show random foods
 - [ ] use tailwindcss to make beautifull front-end 🤦‍♂️
 - [ ] learn to use get[any]props 😕
 - [ ] think about more todos

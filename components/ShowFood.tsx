@@ -8,10 +8,9 @@ interface Food {
 }
 const ShowFood: FC<Food> = ({ id, name, img, link }) => {
     return (
-        <div>
+        <div className='border border-zinc-200 rounded-lg p-3 shadow-md shadow-orange-200'>
             <div>{name}</div>
-            <img src={img} alt="" />
-            <a href={link}>วิธีทำ</a>
+            <img className='w-64 rounded border-2 border-zinc-200' src={img} alt="" />
         </div>
     )
 }

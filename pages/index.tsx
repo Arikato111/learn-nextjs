@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react'
 import ShowFood from '@/components/ShowFood'
 
 interface Food {
-    id?: number;
-    name?: string;
-    img?: string;
-    link?: string;
+  id?: number;
+  name?: string;
+  img?: string;
+  link?: string;
 }
 
 export default function Home() {
@@ -35,6 +35,7 @@ export default function Home() {
         <h3 className="text-lg">งั้นไม่ต้องคิด สุ่มเอา</h3>
         <div className='text-center'>
           <button onClick={() => {
+            if(loadState !== 0 && loadState !== 100) return;
             setTimeLimit(Math.floor(Math.random() * 100))
             setLoadState(1)
             axios.get('/api/food').then(res => {
@@ -45,10 +46,7 @@ export default function Home() {
             สุ่ม
           </button>
           {loadState === 100 ? (
-            <div className='border border-zinc-200 rounded-lg p-3 shadow-md shadow-orange-200'>
-              <div>{food.name}</div>
-              <img className='w-64 rounded border-2 border-zinc-200' src={food.img} alt="" />
-            </div>
+            <ShowFood id={food.id ?? 0} img={food.img ?? ""} link={food.link ?? ""} name={food.name ?? ""} />
           ) : (
             <div>
               <div className="bg-zinc-200 w-[50vh] h-2 rounded-lg">

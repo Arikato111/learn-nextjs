@@ -35,7 +35,7 @@ export default function Home() {
         <h3 className="text-lg">งั้นไม่ต้องคิด สุ่มเอา</h3>
         <div className='text-center'>
           <button onClick={() => {
-            if(loadState !== 0 && loadState !== 100) return;
+            if (loadState !== 0 && loadState !== 100) return;
             setTimeLimit(Math.floor(Math.random() * 100))
             setLoadState(1)
             axios.get('/api/food').then(res => {
@@ -49,10 +49,13 @@ export default function Home() {
             <ShowFood id={food.id ?? 0} img={food.img ?? ""} link={food.link ?? ""} name={food.name ?? ""} />
           ) : (
             <div>
-              <div className="bg-zinc-200 w-[50vh] h-2 rounded-lg">
-                <div style={{ width: `${loadState}%` }} className='rounded-lg bg-orange-400 h-2'></div>
-                <div>กำลังโหลด {loadState}%</div>
-              </div>
+              {loadState > 0 ?
+                <div className="bg-zinc-200 w-[60vw] sm:w-[20vw] h-2 rounded-lg">
+                  <div style={{ width: `${loadState}%` }} className='rounded-lg bg-orange-400 h-2'></div>
+                  <div>กำลังโหลด {loadState}%</div>
+                </div>
+                : ""
+              }
             </div>
 
           )}

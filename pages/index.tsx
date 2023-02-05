@@ -65,6 +65,7 @@ export default function Home() {
           <div className="fixed bottom-0 p-1 right-0 opacity-90 hover:opacity-100 transition-all ">
             <a
               target="_blank"
+              rel='noreferrer'
               href="https://github.com/Arikato111/next-food-random"
               title="ดู source code บน Github"
             >

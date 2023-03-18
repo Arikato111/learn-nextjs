@@ -9,19 +9,20 @@
 random foods for eat
 ## Get started
 
-- `yarn` 
-- `yarn dev`
+- `yarn` or `npm install`
+- `yarn dev` or `npm run dev`
 - open [http://localhost:3000](http://localhost:3000) with your browser
 
 ## Inside it
 
 - Nextjs
 - TypeScript
+- tailwindcss
 - axios
 
 ## TODOs
 
-- [ ] Try SEO
+- [x] Try SEO
 - [ ] working with api
 - [x] install tailwindcss
 - [x] show random foods

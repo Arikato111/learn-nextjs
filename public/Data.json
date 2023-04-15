@@ -52,5 +52,17 @@
         "name": "ข้าวแกงกะหรี่ปลาซาบะ",
         "img": "https://img.wongnai.com/p/1920x0/2022/11/04/3f61c1def2784c688d934970f003601f.jpg",
         "link": "https://www.wongnai.com/recipes/saba-fish-curry-rice"
+    },
+    {
+        "id": 9,
+        "name": "ดังโงะขนมต้ม",
+        "img": "https://img.wongnai.com/p/1968x0/2022/02/23/aad911a3630f4976b6618b4fde68ce8f.jpg",
+        "link": "https://www.wongnai.com/recipes/ugc/cee96a17dd0942f4962da8bbfe90ebc7"
+    },
+    {
+        "id": 10,
+        "name": "ดังโงะ",
+        "img": "https://img.wongnai.com/p/1968x0/2019/09/20/b47d0b20530944028e6c8a62b0532bb4.jpg",
+        "link": "https://www.wongnai.com/recipes/ugc/08b58fcd908a46d1a65e2ecc593229f5"
     }
 ]
